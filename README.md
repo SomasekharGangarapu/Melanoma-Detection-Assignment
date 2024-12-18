@@ -76,17 +76,17 @@ Defining functions for all steps in model building, evaluation
 
 ## Summary
 **Technical Conclusion:**
-
+ 
 * Three CNN models were developed and evaluated for skin cancer classification.
 * Model 1, without data augmentation or dropout, suffered from overfitting.
 * Model 2 incorporated data augmentation and dropout to address overfitting, but resulted in underfitting.
-* Model 3 addressed class imbalance using data augmentation via Augmentor, achieving improved training and validation accuracy (93%).
-* Despite improvements, the test accuracy remained relatively low (~37%).  Further model complexity or transfer learning is recommended for improved performance.
+* Model 3 addressed class imbalance using data augmentation via Augmentor, achieving improved training accuracy (95%) and validation accuracy (94%).
+* Despite improvements, the test accuracy remained relatively low (~40%).  Further model complexity or transfer learning is recommended for improved performance.
 * The data augmentation strategy using Augmentor effectively balanced the class distribution in the training dataset, which was a key factor in improving model performance.
 
 **Business Conclusion:**
 
-* The developed model demonstrates the potential for automated skin cancer classification.  While the current accuracy (~37% on test data) is not yet suitable for direct clinical use, it represents a foundational step.
+* The developed model demonstrates the potential for automated skin cancer classification.  While the current accuracy (~40% on test data) is not yet suitable for direct clinical use, it represents a foundational step.
 * Future improvements focusing on model architecture and larger, more diverse datasets could significantly enhance diagnostic accuracy.
 * This technology holds promise for assisting dermatologists in preliminary screenings, potentially leading to earlier detection and improved patient outcomes.
 * Further research and development are needed before deployment in a clinical setting.  A more robust model with higher accuracy and validated performance is required.
